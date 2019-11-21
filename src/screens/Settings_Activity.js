@@ -15,7 +15,7 @@ export default class Settings_Activity extends Component {
 
       <View style={styles.MainContainer}>
 
-        <Text style={{ marginTop: 40, fontSize: 20 }}>Settings Activity Screen</Text>
+        <Text style={{ marginTop: 40, fontSize: 20 }}>且慢</Text>
 
         <TouchableOpacity
           style={styles.button}
@@ -37,7 +37,7 @@ export default class Settings_Activity extends Component {
           style={styles.button}
           onPress={() => this.props.navigation.navigate('Profile')}>
 
-          <Text style={styles.text}>Goto Profile Screen</Text>
+          <Text style={styles.text}>History</Text>
 
         </TouchableOpacity>
 
