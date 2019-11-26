@@ -16,15 +16,7 @@ export default class Settings_Activity extends Component {
       <View style={styles.MainContainer}>
 
         <Text style={{ marginTop: 40, fontSize: 20 }}>且慢</Text>
-
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => this.props.navigation.navigate('Home')}>
-
-          <Text style={styles.text}>Go to Home Tab</Text>
-
-        </TouchableOpacity>
-
+       
         <TouchableOpacity
           style={styles.button}
           onPress={() => this.props.navigation.navigate('Details')}>

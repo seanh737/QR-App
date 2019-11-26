@@ -9,12 +9,12 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Home_Activity from './screens/Home_Activity';
 import Settings_Activity from './screens/Settings_Activity';
 import Details_Activity from './screens/Details_Activity';
-import Profile_Activity from './screens/Profile_Activity';
+import Profile_Activity from './screens/History';
 
+//首頁
 const HomeTab = createStackNavigator(
   {
     Home: Home_Activity ,
-    Details: Details_Activity ,
   },
   {
     defaultNavigationOptions: {
@@ -28,6 +28,7 @@ const HomeTab = createStackNavigator(
   }
 );
 
+//第二頁
 const SettingsTab = createStackNavigator(
   {
     Settings: Settings_Activity ,
@@ -45,13 +46,13 @@ const SettingsTab = createStackNavigator(
     },
   }
 );
-
+//bottom bar
 const MainApp = createBottomTabNavigator(
   {
     Home: HomeTab ,
     Settings: SettingsTab ,
   },
-  {
+  {//加icon
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
         const { routeName } = navigation.state;
